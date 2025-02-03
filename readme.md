@@ -1,5 +1,12 @@
 # 算术验证码识别
 
+## 示例
+
+![](images/0-0_0.png)
+
+![](images/0-2=5436.png)
+
+
 ## 说明 
 
 0. g.py 生成数据集，山寨版（原版数据，正版验证码前往[EasyCaptcha](https://github.com/ele-admin/EasyCaptcha)）
