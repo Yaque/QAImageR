@@ -11,6 +11,12 @@ import os
 from PIL import Image
 import numpy as np
 
+if not os.path.exists('runs'):
+    os.mkdir('runs')
+
+if not os.path.exists('m'):
+    os.mkdir('m')
+
 number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 sign = ['+', '-', 'x']
 
@@ -133,7 +139,7 @@ transform = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # 使用ImageNet数据集的均值和标准差
 ])
 
-bs = 64
+bs = 4
 train_dataset = CaptchaDataset(root_dir='images/Train', transform=transform)
 train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=bs, shuffle=True)
 

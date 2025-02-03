@@ -68,5 +68,5 @@ if __name__ == "__main__":
     if not os.path.exists('images/Test'):
         os.mkdir('images/Test')
 
-    gen_captcha_text_and_image(500, 'Train')
-    gen_captcha_text_and_image(50, 'Test')
+    gen_captcha_text_and_image(10, 'Train')
+    gen_captcha_text_and_image(5, 'Test')
